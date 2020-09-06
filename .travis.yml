@@ -7,3 +7,15 @@ script:
 service: 
   - docker
 sudo: required
+
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-west-2"
+  app: "
+  env: ""
+  bucket_name: ""
+  bucket_path: "Enter App name"
+  on:
+    branch: master
+
+
